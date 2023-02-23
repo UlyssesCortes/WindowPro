@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.orangeStyle {
+    color: #e99ea1;
+}
+
+.mainSecTop {
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    width: 100%;
+}
+
+.leftSection {
+    width: 110%;
+}
+
+.leftBoxContainer {
+    background-color: #fff8f8;
+    height: 70%;
+    padding: 60px;
+    padding-left: 100px;
+    margin-left: 20px;
+}
+
+.leftTextTop {
+    width: 20em;
+}
+
+.title {
+    color: #f1957f;
+    margin-left: 2em;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.sloganWord {
+    color: #f1957f;
+    font-size: 34px;
+}
+
+.subSlogan {
+    font-size: 18px;
+}
+
+.rightSection {
+    width: 100%;
+}
+
+.rightImage {
+    background-image: url("../img/cleaning4.png");
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.firstServiceSec {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.homeClening {
+    margin-top: 30px;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    padding-left: 25px;
+    box-shadow: rgba(250, 230, 232, 255) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.homeIcon {
+    background-image: url("../img/house.png");
+    margin-bottom: 10px;
+    z-index: 1;
+    width: 20%;
+    height: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homeDes {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding-right: 20px;
+}
+
+.commercialCleaning {
+    margin-top: 30px;
+    height: 250px;
+    width: 250px;
+    background-image: linear-gradient(142deg, #ff7b4f 0%, #fb4965 100%);
+    padding: 20px;
+    box-shadow: rgba(250, 230, 232, 255) 0px 5px 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.comercialIcon {
+    background-image: url("../img/building.png");
+    z-index: 1;
+    width: 20%;
+    margin-bottom: 10px;
+    height: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
