@@ -62,41 +62,66 @@ const Home = () => {
                     </section>
                 </div>
             </section>
-            {/* <section className="thirdBox">
+
+            <section className="thirdBox">
                 <section className="thirdBoxLeft">
                     <p className="orangeStyle">PRICING</p>
                     <h1>Quick Quote</h1>
-                    <p>Save your time and money with online quoting and flat rate pricing!</p>
+                    <p className="thirdBoxDes">Save your time and money with online quoting and flat rate pricing!</p>
                     <div className="quickForm">
-                        <image className="stanIcon"></image>
-                        <p className="orangeStyle">Type of cleaning</p>
-                        <image className="stanIcon2"></image>
-                        <p className="orangeStyle">Windows</p>
+                        <section className="quoteCategory">
+                            <div className="stanIcon"></div>
+                            <p className="orangeStyle locationTitle">Location</p>
+                            <div class="selectLocationContainer">
+                                <select className="selectLocationBox">
+                                    <option className="optionStyle" value="0">Select location:</option>
+                                    <option className="optionStyle" value="1">Oceanside</option>
+                                    <option className="optionStyle" value="2">Vista</option>
+                                    <option className="optionStyle" value="3">San Marcos</option>
+                                    <option className="optionStyle" value="4">Escondido</option>
+                                    <option className="optionStyle" value="5">Carlsbad</option>
+                                    <option className="optionStyle" value="6">San Clemente</option>
+                                    <option className="optionStyle" value="7">Fallbrook</option>
+                                    <option className="optionStyle" value="8">Del Mar</option>
+                                    <option className="optionStyle" value="9">Encinitas</option>
+                                    <option className="optionStyle" value="10">San Diego</option>
+                                </select>
+                                <div className="iconContainer"></div>
+                            </div>
+                        </section>
+                        <section className="quoteCategory">
+                            <div className="stanIcon2"></div>
+                            <p className="orangeStyle windowTitle">Windows</p>
+                        </section>
                         <div className="addWindowBox">
                             <button className="windowBtn">-</button>
                             <h2 className="counter">0</h2>
                             <button className="windowBtn">+</button>
                         </div>
-
                     </div>
                 </section>
                 <section className="thirdBoxRight">
                     <p>SUBTOTAL</p>
-                    <p className="price">$86</p>
+                    <p className="price"><span>$</span>86</p>
                     <div className="priceDetails">
                         <div className="details">
-                            <p>Standard</p>
+                            <p>Location</p>
+                            <p>Oceanside</p>
+                        </div>
+                        <div className="details">
+                            <p>Duration</p>
                             <p>3 Hours</p>
                         </div>
                         <div className="details">
                             <p>Windows</p>
                             <p>1</p>
                         </div>
-                        <p>Continue Booking</p>
+                        <p className="continue">Get a quote  &gt;</p>
+                        {/* <div className="sideArrowIcon"></div> */}
                     </div>
                 </section>
-            </section>
-            <section className="fourthSection">
+            </section >
+            {/* <section className="fourthSection">
                 <div className="topFourth">
                     <p className="orangeStyle">We Love our customers</p>
                     <p>We make every single customer happy with everything we do from customer service to our professional window cleaning!</p>
@@ -152,7 +177,7 @@ const Home = () => {
                 </div>
             </section> */}
 
-        </body>)
+        </body >)
 }
 
 export default Home
