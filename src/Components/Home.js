@@ -47,15 +47,19 @@ const Home = () => {
                     <p className="secondDes">We provide online quote, lightning fast customer service, fantastic organic cleaning using only eco sustainable queality cleaning products, pricing that beats the competitors and 100% satisfaction guarantee every time!</p>
                 </div>
                 <div className="secondBoxRight">
-                    <section>
+                    <section className="offerSec">
+                        <div className="satisfactionIcon"></div>
                         <p>100% Satisfaction guarantee</p>
-                        <p>Secure online quote</p>
                     </section>
-                    <section>
-                        <p>Green, eco-friendly cleaning</p>
-                        <p>Monthly, fortnighthly weelky discounts</p>
+                    <section className="offerSec">
+                        <p><div className="quoteIcon"></div>Secure online quote</p>
                     </section>
-
+                    <section className="offerSec">
+                        <p><span className="ecoIcon"></span>Green, eco-friendly cleaning</p>
+                    </section>
+                    <section className="offerSec">
+                        <p><span className="discountIcon"></span>Monthly, fortnighthly weelky discounts</p>
+                    </section>
                 </div>
             </section>
             {/* <section className="thirdBox">
