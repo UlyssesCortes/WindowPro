@@ -39,20 +39,26 @@ const Home = () => {
                     <div className="rightImage"></div>
                 </section>
             </section>
-            {/* <section className="secondBox">
+
+            <section className="secondBox">
                 <div className="secondBoxLeft">
                     <p className="orangeStyle">OUR BENEFITS</p>
-                    <h1>What We Offer</h1>
-                    <p>We provide online quote, lightning fast customer service, fantastic organic cleaning using only eco sustainable queality cleaning products, pricing that beats the competitors and 100% satisfaction guarantee every time!</p>
+                    <h1 className="secondTitle">What We Offer</h1>
+                    <p className="secondDes">We provide online quote, lightning fast customer service, fantastic organic cleaning using only eco sustainable queality cleaning products, pricing that beats the competitors and 100% satisfaction guarantee every time!</p>
                 </div>
                 <div className="secondBoxRight">
-                    <p>100% Satisfaction guarantee</p>
-                    <p>Secure online quote</p>
-                    <p>Green, eco-friendly cleaning</p>
-                    <p>Monthly, fortnighthly weelky discounts</p>
+                    <section>
+                        <p>100% Satisfaction guarantee</p>
+                        <p>Secure online quote</p>
+                    </section>
+                    <section>
+                        <p>Green, eco-friendly cleaning</p>
+                        <p>Monthly, fortnighthly weelky discounts</p>
+                    </section>
+
                 </div>
             </section>
-            <section className="thirdBox">
+            {/* <section className="thirdBox">
                 <section className="thirdBoxLeft">
                     <p className="orangeStyle">PRICING</p>
                     <h1>Quick Quote</h1>

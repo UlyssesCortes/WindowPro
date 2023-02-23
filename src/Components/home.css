@@ -11,7 +11,7 @@
 .mainSecTop {
     display: flex;
     flex-direction: row;
-    height: 60vh;
+    height: 55vh;
     width: 100%;
 }
 
@@ -35,7 +35,11 @@
     color: #f1957f;
     margin-left: 2em;
     padding: 20px;
-    font-size: 24px;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0.02em 0.15em #d8dddf;
 }
 
 .slogan {
@@ -47,7 +51,11 @@
 
 .sloganWord {
     color: #f1957f;
-    font-size: 34px;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0.02em 0.15em #f1d4ec;
 }
 
 .subSlogan {
@@ -70,13 +78,18 @@
 .firstServiceSec {
     display: flex;
     flex-direction: row;
+    position: absolute;
+    margin-top: -1em;
+    justify-content: center;
+    z-index: 2;
+    margin-left: 200px;
     gap: 50px;
 }
 
 .homeClening {
     margin-top: 30px;
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 280px;
     background-color: white;
     padding: 20px;
     padding-left: 25px;
@@ -102,8 +115,8 @@
 
 .commercialCleaning {
     margin-top: 30px;
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 280px;
     background-image: linear-gradient(142deg, #ff7b4f 0%, #fb4965 100%);
     padding: 20px;
     box-shadow: rgba(250, 230, 232, 255) 0px 5px 15px;
@@ -119,4 +132,30 @@
     height: 20%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.secondBox {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3em;
+    height: 20em;
+    padding: 10em;
+}
+
+.secondBoxLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 60%;
+}
+
+.secondDes {
+    width: 60%;
+}
+
+.secondBoxRight {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 6em;
 }
