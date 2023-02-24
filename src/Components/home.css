@@ -389,3 +389,86 @@
     background-size: contain;
     background-image: url("../img/right-arrow-angle.png");
 }
+
+.fourthSection {
+    display: flex;
+    flex-direction: column;
+    height: 72vh;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
+
+.customers {
+    font-size: 20px;
+}
+
+.reviewSlogan {
+    font-size: 18px;
+}
+
+.topFourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.topFourth p {
+    text-align: center;
+    width: 600px;
+    padding-top: 30px;
+}
+
+.swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+}
+
+.item {
+    background-image: linear-gradient(142deg, #ffede8 0%, #f5ced4 100%);
+    height: 100%;
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 10px 100px 30px 100px;
+    line-height: 1.6;
+    height: 220px;
+}
+
+.reviwerName {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+}
+
+.reviwerName p {
+    font-weight: bold;
+}
+
+.avatarImage {
+    display: flex;
+    align-content: center;
+    padding: 10px;
+    margin: auto;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.fiveStarReview {
+    position: relative;
+    margin-top: -55px;
+}
