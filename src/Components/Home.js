@@ -241,7 +241,7 @@ const Home = () => {
                 </Swiper>
             </section>
 
-            <section className="secondBox">
+            <section className="secondBox fifthBox">
                 <div className="secondBoxLeft">
                     <p className="orangeStyle">We Love our customers</p>
                     <h1 className="secondTitle">What You Get</h1>
@@ -249,22 +249,20 @@ const Home = () => {
                 </div>
                 <div className="secondBoxRight">
                     <section className="offerSec">
-                        <div className="satisfactionIcon"></div>
+                        <div className="experienceIcon"></div>
                         <p>Highly experienced cleaning team</p>
                     </section>
                     <section className="offerSec">
-                        <p><div className="quoteIcon"></div>All equipment and chemicals provided</p>
+                        <p><div className="equipmentIcon"></div>All equipment and chemicals provided</p>
                     </section>
                     <section className="offerSec">
-                        <p><span className="ecoIcon"></span>Insured service against damages</p>
+                        <p><span className="insuredIcon"></span>Insured service against damages</p>
                     </section>
                     <section className="offerSec">
-                        <p><span className="discountIcon"></span>Unlimited respone customer service</p>
+                        <p><span className="chatIcon"></span>Unlimited respone customer service</p>
                     </section>
                 </div>
             </section>
-
-
 
             {/* <section className="sixthBox">
                 <section className="serviceBoxes">
