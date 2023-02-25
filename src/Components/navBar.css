@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    color: #000000;
+    font-weight: bold;
+    padding: 2em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(238, 236, 236, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}
+
+.numContainer {
+    font-size: 18px;
+}
+
+.phoneLink {
+    text-decoration: none;
+    z-index: 999;
+}
+
+.myNum {
+    letter-spacing: 5px;
+    color: rgba(0, 0, 0, .6);
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, .2);
+    z-index: 2;
+}
+
+.linksSection {
+    display: flex;
+    gap: 25px;
+}
+
+.links {
+    all: unset;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    gap: 10px;
+    color: #000000;
+    padding: 10px;
+    font-weight: 100;
+}
+
+.links::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.links:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.webTitle {
+    all: unset;
+    cursor: pointer;
+
+}

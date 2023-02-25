@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .orangeStyle {
@@ -14,8 +15,9 @@
 .mainSecTop {
     display: flex;
     flex-direction: row;
-    height: 55vh;
+    height: 70vh;
     width: 100%;
+    margin-top: 80px;
 }
 
 .leftSection {
@@ -71,6 +73,8 @@
 
 .rightSection {
     width: 100%;
+    margin-right: 20px;
+
 }
 
 .rightImage {
@@ -174,7 +178,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     width: 60%;
     height: 12em;
 }
@@ -183,10 +187,6 @@
     width: 250px;
 }
 
-.satisfactionIcon,
-.quoteIcon,
-.ecoIcon,
-.discountIcon,
 .experienceIcon,
 .equipmentIcon,
 .insuredIcon,
@@ -200,24 +200,6 @@
     background-size: contain;
 }
 
-.satisfactionIcon {
-    background-image: url("../img/satisfaction.png");
-}
-
-.quoteIcon {
-    background-image: url("../img/sign-up.png");
-    margin-top: -12px;
-
-}
-
-.ecoIcon {
-    background-image: url("../img/save-the-world.png");
-}
-
-.discountIcon {
-    background-image: url("../img/price-tag.png");
-    margin-top: 0px;
-}
 
 /* Section 3 */
 .thirdBox {
@@ -434,7 +416,7 @@
 }
 
 .item {
-    background-image: linear-gradient(142deg, #ffede8 0%, #f5ced4 100%);
+    background-image: linear-gradient(142deg, #fafafa 0%, #cec1c3 100%);
     height: 100%;
     font-size: 18px;
     padding-top: 15px;
@@ -485,21 +467,31 @@
 }
 
 .experienceIcon {
-    background-image: url("../img/support.png");
+    height: 50px;
+    width: 50px;
+    margin-left: -60px;
 }
 
 .equipmentIcon {
-    background-image: url("../img/spray.png");
     margin-top: -12px;
+    height: 50px;
+    width: 50px;
+    margin-left: -60px;
+
 }
 
 .insuredIcon {
-    background-image: url("../img/insurance.png");
+    height: 50px;
+    width: 50px;
+    margin-left: -60px;
 }
 
 .chatIcon {
-    background-image: url("../img/chat.png");
+    height: 50px;
+    width: 50px;
     margin-top: -12px;
+    margin-left: -60px;
+
 }
 
 /* Sixth box */
@@ -509,6 +501,7 @@
     align-items: center;
     height: 50vh;
     background-color: #fcebec;
+    margin: 20px;
 
 }
 
@@ -541,4 +534,52 @@
 .serviceIcon {
     width: 60px;
     height: 60px;
+}
+
+.reveal1 {
+    position: relative;
+    transform: translatey(150px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.reveal1.active {
+    transform: translatey(0px);
+    opacity: 1;
+}
+
+.reveal2 {
+    position: relative;
+    transform: translatey(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal2.active {
+    transform: translatey(0px);
+    opacity: 1;
+}
+
+.reveal3 {
+    position: relative;
+    transform: translatey(150px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.reveal3.active {
+    transform: translatey(0px);
+    opacity: 1;
+}
+
+.reveal4 {
+    position: relative;
+    transform: translatey(150px);
+    opacity: 0;
+    transition: all 2.2s ease;
+}
+
+.reveal4.active {
+    transform: translatey(0px);
+    opacity: 1;
 }
