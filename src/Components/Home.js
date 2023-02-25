@@ -243,7 +243,7 @@ const Home = () => {
 
             <section className="secondBox fifthBox">
                 <div className="secondBoxLeft">
-                    <p className="orangeStyle">We Love our customers</p>
+                    <p className="orangeStyle">OUR SERVICES</p>
                     <h1 className="secondTitle">What You Get</h1>
                     <p className="secondDes">We provide online quote, lightning fast customer service, fantastic organic cleaning using only eco sustainable queality cleaning products, pricing that beats the competitors and 100% satisfaction guarantee every time!</p>
                 </div>
@@ -264,29 +264,29 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* <section className="sixthBox">
+            <section className="sixthBox">
                 <section className="serviceBoxes">
                     <div className="serviceBox">
-                        <image className="serviceIcon"></image>
+                        <img className="serviceIcon" alt="serviceIcon" src="https://cdn-icons-png.flaticon.com/512/2377/2377076.png" />
                         <h2>Standard</h2>
                         <p>Impress your guests and experience the joys of living in a clean house</p>
-                        <p className="orangeStyle">Service List</p>
+                        <p className="orangeStyle">Get a quote</p>
                     </div>
                     <div className="serviceBox">
-                        <image className="serviceIcon2"></image>
-                        <h2>Deep</h2>
+                        <img className="serviceIcon" alt="serviceIcon" src="https://cdn-icons-png.flaticon.com/512/8027/8027641.png" />
+                        <h2>Comercial</h2>
                         <p>Impress your guests and experience the joys of living in a clean house</p>
-                        <p className="orangeStyle">Service List</p>
+                        <p className="orangeStyle">Get a quote</p>
                     </div>
                     <div className="serviceBox">
-                        <image className="serviceIcon3"></image>
-                        <h2>Moving</h2>
+                        <img className="serviceIcon" alt="serviceIcon" src="https://cdn-icons-png.flaticon.com/512/2962/2962259.png" />
+                        <h2>Solar panel</h2>
                         <p>Impress your guests and experience the joys of living in a clean house</p>
-                        <p className="orangeStyle">Service List</p>
+                        <p className="orangeStyle">Get a quote</p>
                     </div>
                 </section>
             </section>
-            <section className="seventhSection">
+            {/* <section className="seventhSection">
                 <div className="leftText">
                     <h2>Online Quote</h2>
                     <p>Save your time and money with online quoteing and flat rate pricing!</p>
