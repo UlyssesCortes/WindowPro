@@ -90,14 +90,14 @@ const Home = () => {
                             <h1 className="slogan">
                                 <span>The Best </span>
                                 <span>Window Cleaning</span><span className="cityPart">
-                                    in <spam className="sloganWord">Oceanside</spam>
+                                    in <spam className="sloganWord typewriter"></spam>
                                 </span> </h1>
                             <p className="subSlogan">Our 100% Happiness Guarantee ensures that you receive the best cleaning</p>
                         </div>
                         <section className="firstServiceSec">
                             <div className="homeClening">
                                 <div className="homeIcon"></div>
-                                <h2 className="homeCleaningTitle">Home</h2>
+                                <h2 className="homeCleaningTitle">Residential</h2>
                                 <p className="homeDes">
                                     Save your time and money with online booking and flat rate pricing!
                                 </p>
