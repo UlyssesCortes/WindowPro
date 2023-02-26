@@ -2,6 +2,7 @@ import React from "react";
 import './home.css'
 import Reviews from "./Reviews";
 import Navbar from "./Navbar";
+import ContactUs from "./ContactUs";
 
 const Home = () => {
     window.addEventListener('scroll', reveal1);
@@ -88,8 +89,8 @@ const Home = () => {
                     <div className="leftBoxContainer">
                         <div className="leftTextTop">
                             <h1 className="slogan">
-                                <span>The Best </span>
-                                <span>Window Cleaning</span><span className="cityPart">
+                                <span>The </span>
+                                <span>Best Window Cleaning</span><span className="cityPart">
                                     in <spam className="sloganWord typewriter"></spam>
                                 </span> </h1>
                             <p className="subSlogan">Our 100% Happiness Guarantee ensures that you receive the best cleaning</p>
@@ -143,7 +144,9 @@ const Home = () => {
                     </section>
                 </div>
             </section>
-
+            <br id="quote"></br>
+            <br></br>
+            <br></br>
             <section id="quote" className="thirdBox">
                 <section className="thirdBoxLeft">
                     <p className="orangeStyle">PRICING</p>
@@ -253,7 +256,7 @@ const Home = () => {
                     </div>
                 </section>
             </section>
-
+            <ContactUs />
 
         </body >)
 }
