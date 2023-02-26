@@ -719,24 +719,24 @@ h1 {
     }
 
     62.6279%,
-    66.8605% {
+    67.8605% {
         content: "Carlsba";
     }
 
-    64.7674%,
-    62.7209% {
+    63.7674%,
+    66.7209% {
         content: "Carlsbad";
     }
 
     65.9070%,
-    60.5814% {
+    65.5814% {
         content: "Carlsbad!";
     }
 
-    /* 76.0465%,
-    75.4419% {
+    100%,
+    100% {
         content: "";
-    } */
+    }
 
     /* 84.0465%,
     109.4419% {
@@ -810,13 +810,13 @@ h1 {
             content: "Carlsbad!";
         }
 
-        /* 75% {
+        75% {
             content: "human";
-        } */
+        }
     }
 
     .typewriter::before {
-        content: "developer";
+        content: "Oceanside";
         animation: sequencePopup 12s linear infinite;
     }
 }
