@@ -1,83 +1,32 @@
 import React from "react";
 import './home.css'
+import './animations.css'
 import Reviews from "./Reviews";
 import Navbar from "./Navbar";
 import ContactUs from "./ContactUs";
 
 const Home = () => {
-    window.addEventListener('scroll', reveal1);
-    window.addEventListener('scroll', reveal2);
-    window.addEventListener('scroll', reveal3);
-    window.addEventListener('scroll', reveal4);
 
-    function reveal1() {
-        var reveals = document.querySelectorAll('.reveal1');
+    window.addEventListener('scroll', function () { revealItems(".reveal1", 150) });
+    window.addEventListener('scroll', function () { revealItems(".reveal2", 100) });
+    window.addEventListener('scroll', function () { revealItems(".reveal3", 200) });
+    window.addEventListener('scroll', function () { revealItems(".reveal4", 50) });
+
+    function revealItems(className, revealPoint) {
+        var reveals = document.querySelectorAll(className);
 
         for (var i = 0; i < reveals.length; i++) {
-
             var windowheight = window.innerHeight;
             var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
 
-            if (revealtop < windowheight - revealpoint) {
+            if (revealtop < windowheight - revealPoint) {
                 reveals[i].classList.add('active');
-            }
-            else {
+            } else {
                 reveals[i].classList.remove('active');
             }
         }
     }
-    function reveal2() {
-        var reveals = document.querySelectorAll('.reveal2');
 
-        for (var i = 0; i < reveals.length; i++) {
-
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
-
-            if (revealtop < windowheight - revealpoint) {
-                reveals[i].classList.add('active');
-            }
-            else {
-                reveals[i].classList.remove('active');
-            }
-        }
-    }
-    function reveal3() {
-        var reveals = document.querySelectorAll('.reveal3');
-
-        for (var i = 0; i < reveals.length; i++) {
-
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
-
-            if (revealtop < windowheight - revealpoint) {
-                reveals[i].classList.add('active');
-            }
-            else {
-                reveals[i].classList.remove('active');
-            }
-        }
-    }
-    function reveal4() {
-        var reveals = document.querySelectorAll('.reveal4');
-
-        for (var i = 0; i < reveals.length; i++) {
-
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
-
-            if (revealtop < windowheight - revealpoint) {
-                reveals[i].classList.add('active');
-            }
-            else {
-                reveals[i].classList.remove('active');
-            }
-        }
-    }
     return (
         <body>
             <Navbar />
@@ -93,7 +42,7 @@ const Home = () => {
                                 <span>Best Window Cleaning</span><span className="cityPart">
                                     in <spam className="sloganWord typewriter"></spam>
                                 </span> </h1>
-                            <p className="subSlogan">Our 100% Happiness Guarantee ensures that you receive the best cleaning</p>
+                            <p className="subSlogan">The best cleaning results are guaranteed by our 100% Happiness Guarantee</p>
                         </div>
                         <section className="firstServiceSec">
                             <div className="homeClening">
@@ -127,7 +76,7 @@ const Home = () => {
                 </div>
                 <div className="secondBoxRight ">
                     <section className="offerSec reveal1">
-                        <img className="experienceIcon" alt="teamIcon" src="https://cdn-icons-png.flaticon.com/512/4064/4064243.png" />
+                        <img className="experienceIcon" alt="teamIcon" src="https://cdn-icons-png.flaticon.com/128/4701/4701305.png" />
                         <p>100% Satisfaction guarantee</p>
                     </section>
                     <section className="offerSec reveal2">
@@ -139,7 +88,7 @@ const Home = () => {
                         <p>Green, eco-friendly cleaning</p>
                     </section>
                     <section className="offerSec reveal4">
-                        <img className="insuredIcon" alt="teamIcon" src="https://cdn-icons-png.flaticon.com/512/2169/2169846.png" />
+                        <img className="insuredIcon" alt="teamIcon" src="https://cdn-icons-png.flaticon.com/128/3176/3176280.png" />
                         <p>Monthly, fortnighthly weelky discounts</p>
                     </section>
                 </div>
@@ -206,13 +155,16 @@ const Home = () => {
                 </section>
             </section >
 
+            <br id="reviews"></br>
+            <br></br>
+            <br></br>
             <Reviews />
 
             <section className="secondBox fifthBox">
                 <div className="secondBoxLeft">
                     <p className="orangeStyle">OUR SERVICES</p>
                     <h1 className="secondTitle">What You Get</h1>
-                    <p className="secondDes">We provide online quote, lightning fast customer service, fantastic organic cleaning using only eco sustainable queality cleaning products, pricing that beats the competitors and 100% satisfaction guarantee every time!</p>
+                    <p className="secondDes">See the world in a new light with crystal-clear windows and efficient solar panels. Our cleaning services brighten up your home and help you save on energy bills. Experience the difference a professional clean can make.</p>
                 </div>
                 <div className="secondBoxRight">
                     <section className="offerSec reveal1">
@@ -228,30 +180,32 @@ const Home = () => {
                         <p>Insured service against damages</p>
                     </section>
                     <section className="offerSec reveal4">
-                        <img className="insuredIcon" alt="teamIcon" src="https://cdn-icons-png.flaticon.com/512/3114/3114553.png" />
+                        <img className="insuredIcon" alt="teamIcon" src="https://cdn-icons-png.flaticon.com/128/2950/2950657.png" />
                         <p>Unlimited respone customer service</p>
                     </section>
                 </div>
             </section>
 
-            <section id="services" className="sixthBox">
+            <br id="services"></br>
+            <br></br>
+            <section className="sixthBox">
                 <section className="serviceBoxes">
                     <div className="serviceBox ">
                         <img className="serviceIcon" alt="serviceIcon" src="https://cdn-icons-png.flaticon.com/512/2377/2377076.png" />
-                        <h2>Standard</h2>
+                        <h2>Residential</h2>
                         <p>Impress your guests and experience the joys of living in a clean house</p>
                         <p className="orangeStyle">Get a quote</p>
                     </div>
                     <div className="serviceBox">
                         <img className="serviceIcon" alt="serviceIcon" src="https://cdn-icons-png.flaticon.com/512/8027/8027641.png" />
                         <h2>Comercial</h2>
-                        <p>Impress your guests and experience the joys of living in a clean house</p>
+                        <p>Create a welcoming environment with a clean and well-maintained business space.</p>
                         <p className="orangeStyle">Get a quote</p>
                     </div>
                     <div className="serviceBox">
                         <img className="serviceIcon" alt="serviceIcon" src="https://cdn-icons-png.flaticon.com/512/2962/2962259.png" />
                         <h2>Solar panel</h2>
-                        <p>Impress your guests and experience the joys of living in a clean house</p>
+                        <p>Maximize your solar power with a spotless shine.</p>
                         <p className="orangeStyle">Get a quote</p>
                     </div>
                 </section>

@@ -9,11 +9,10 @@ import { EffectCoverflow, Pagination, Autoplay, Navigation } from "swiper";
 const Reviews = () => {
     return (
         <>
-            <br id="reviews"></br>
             <section className="fourthSection">
                 <div className="topFourth">
-                    <p className="orangeStyle customers">We Love our customers</p>
-                    <p className="reviewSlogan">We make every single customer happy with everything we do from customer service to our professional window cleaning!</p>
+                    <p className="orangeStyle customers">Our customers are important to us</p>
+                    <p className="reviewSlogan">From our customer service to our expert window cleaning, we make each and every customer happy!</p>
                 </div>
                 <Swiper
                     effect={"coverflow"}
