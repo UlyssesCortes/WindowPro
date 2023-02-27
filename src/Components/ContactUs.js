@@ -1,8 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Spline from '@splinetool/react-spline';
 import './contact.css'
 
 const ContactUs = () => {
+
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [subject, setSubject] = useState("")
+    const [message, setMessage] = useState("")
+
+    const handleNameInput = (event) => {
+        setName(event.target.value)
+    }
+
+    const handleEmailInput = (event) => {
+        setEmail(event.target.value)
+    }
+
+    const handleSubjectInput = (event) => {
+        setSubject(event.target.value)
+    }
+
+    const handleMessageInput = (event) => {
+        setMessage(event.target.value)
+    }
 
     return (
         <>

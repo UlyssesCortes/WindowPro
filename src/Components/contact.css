@@ -23,7 +23,7 @@
     flex-direction: column;
     width: 45em;
     margin: 15%;
-    height: 24em;
+    height: 27em;
     gap: 10px;
 }
 
@@ -43,6 +43,8 @@
     outline: none;
     transition: border .3s;
     transition-timing-function: cubic-bezier(.21, .67, .91, .35);
+    background-color: rgba(248, 247, 247, 0.8);
+    backdrop-filter: blur(10px);
 }
 
 .subInp {
@@ -55,6 +57,8 @@
     outline: none;
     transition: border .3s;
     transition-timing-function: cubic-bezier(.21, .67, .91, .35);
+    background-color: rgba(248, 247, 247, 0.8);
+    backdrop-filter: blur(10px);
 }
 
 .mesInp {
@@ -67,6 +71,8 @@
     outline: none;
     transition: border .3s;
     transition-timing-function: cubic-bezier(.21, .67, .91, .35);
+    background-color: rgba(248, 247, 247, 0.8);
+    backdrop-filter: blur(10px);
 }
 
 .nameInp:focus,
@@ -78,7 +84,7 @@
 }
 
 .sendBtn {
-    height: 40%;
+    height: 35%;
     border-radius: 20px;
     font-size: 1rem;
     background-color: rgba(248, 247, 247, 0.8);

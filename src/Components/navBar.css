@@ -36,7 +36,6 @@
 .myNum {
     letter-spacing: 5px;
     color: rgba(0, 0, 0, .6);
-    text-shadow: 3px 2px 3px rgba(255, 255, 255, .2);
     z-index: 2;
 }
 
