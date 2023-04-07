@@ -4,19 +4,34 @@ import './quote.css'
 const Quote = () => {
     const [windows, setWindows] = useState(0)
     const [location, setLocation] = useState("Select location")
-    const [duration, setDuration] = useState(0)
-
-    // if (windows > 10 && windows < 20) {
-    //     setDuration(1)
-    // } else if (windows > 20) {
-    //     setDuration(2)
-    // }
-
+    const [duration, setDuration] = useState(1)
 
     const handleLocationChange = (event) => {
         setLocation(event.target.value);
+        console.log(windows)
     };
 
+    const handlePlusBtn = () => {
+        setWindows(windows + 1)
+        if (windows < 10) {
+            setDuration(1)
+        } else if (windows > 10 && windows < 20) {
+            setDuration(2)
+        } else if (windows > 20) {
+            setDuration(3)
+        }
+    }
+
+    const handleMinusBtn = () => {
+        windows <= 0 ? setWindows(0) : setWindows(windows - 1)
+        if (windows < 10) {
+            setDuration(1)
+        } else if (windows > 10 && windows < 20) {
+            setDuration(2)
+        } else if (windows > 20) {
+            setDuration(3)
+        }
+    }
 
     return (
         <>
@@ -54,15 +69,15 @@ const Quote = () => {
                             <p className="orangeStyle windowTitle">Windows</p>
                         </section>
                         <div className="addWindowBox">
-                            <button className="windowBtn" onClick={() => { windows <= 0 ? setWindows(0) : setWindows(windows - 1) }}>-</button>
+                            <button className="windowBtn" onClick={() => { handleMinusBtn() }}>-</button>
                             <h2 className="counter">{windows}</h2>
-                            <button className="windowBtn" onClick={() => { setWindows(windows + 1) }}>+</button>
+                            <button className="windowBtn" onClick={() => { handlePlusBtn() }}>+</button>
                         </div>
                     </div>
                 </section>
                 <section className="thirdBoxRight">
                     <p>SUBTOTAL</p>
-                    <p className="price"><span>$</span>86</p>
+                    <p className="price"><span>$</span>150</p>
                     <div className="priceDetails">
                         <div className="details">
                             <p>Location</p>
@@ -70,11 +85,11 @@ const Quote = () => {
                         </div>
                         <div className="details">
                             <p>Duration</p>
-                            <p>{duration}</p>
+                            <p>{duration} hour</p>
                         </div>
                         <div className="details">
                             <p>Windows</p>
-                            <p>1</p>
+                            <p>{windows}</p>
                         </div>
                         <p className="continue">Get a quote</p>
                     </div>

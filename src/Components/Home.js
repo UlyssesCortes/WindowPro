@@ -1,6 +1,6 @@
 import React from "react";
-import './home.css'
-import './animations.css'
+import './home.css';
+import './animations.css';
 import Reviews from "./Reviews";
 import Navbar from "./Navbar";
 import ContactUs from "./ContactUs";
@@ -31,6 +31,7 @@ const Home = () => {
     return (
         <body>
             <Navbar />
+
             <section id="home" className="mainSecTop">
                 <section className="leftSection">
                     <br></br>
@@ -148,10 +149,12 @@ const Home = () => {
                         <img className="serviceIcon" alt="serviceIcon" src="https://cdn-icons-png.flaticon.com/512/2962/2962259.png" />
                         <h2>Solar panel</h2>
                         <p>Maximize your solar power with a spotless shine.</p>
+                        <br></br>
                         <p className="orangeStyle">Get a quote</p>
                     </div>
                 </section>
             </section>
+
             <ContactUs />
 
         </body >)

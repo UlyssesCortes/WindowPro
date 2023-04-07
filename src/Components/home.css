@@ -14,21 +14,19 @@
 .mainSecTop {
     display: flex;
     flex-direction: row;
-    height: 70vh;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 80px;
 }
 
 .leftSection {
-    width: 110%;
+    min-width: 500px;
 }
 
 .leftBoxContainer {
     background-color: #f3eced;
-    height: 70%;
     padding: 60px;
-    padding-left: 100px;
-    margin-left: 20px;
 }
 
 .leftTextTop {
@@ -71,15 +69,13 @@
 }
 
 .rightSection {
-    width: 100%;
-    margin-right: 20px;
-
+    /* min-width: 45%; */
 }
 
 .rightImage {
     background-image: url("../img/cleaning4.png");
     z-index: 1;
-    width: 100%;
+    width: 700px;
     height: 36em;
     background-repeat: no-repeat;
     background-size: cover;
@@ -149,16 +145,18 @@
 .secondBox {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 4em;
     height: 28em;
-    padding: 10em;
 }
 
 .secondBoxLeft {
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    width: 60%;
+    width: 700px;
+    height: 12em;
 }
 
 .secondTitle {
@@ -173,12 +171,11 @@
 
 .secondBoxRight {
     display: flex;
-    position: relative;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    width: 60%;
+    width: 600px;
     height: 12em;
 }
 
@@ -332,6 +329,7 @@
 .serviceBoxes {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     gap: 35px;
@@ -359,4 +357,24 @@
 .serviceIcon {
     width: 60px;
     height: 60px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .secondBoxLeft {
+        height: 300px;
+        padding: 40px;
+    }
+
+    .secondBoxRight {
+        padding-left: 40px;
+    }
+
+    .secondDes {
+        width: 100%;
+    }
+
+    .sixthBox {
+        background-color: transparent;
+        margin-top: 200px;
+    }
 }

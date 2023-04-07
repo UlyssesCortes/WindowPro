@@ -175,5 +175,12 @@
 }
 
 .continue:hover {
-    cursor: url('https://cdn-icons-png.flaticon.com/128/545/545682.png') 16 16, auto;
+    cursor: url('../img/down-arrow.png') 16 16, auto;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .thirdBox {
+        margin-top: 200px;
+    }
 }
