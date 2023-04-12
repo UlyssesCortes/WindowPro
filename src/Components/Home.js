@@ -66,7 +66,7 @@ const Home = () => {
                 </section>
             </section>
 
-            {/* <section className="secondBox">
+            <section className="secondBox">
                 <div className="secondBoxLeft">
                     <p className="orangeStyle">OUR BENEFITS</p>
                     <h1 className="secondTitle">What We Offer</h1>
@@ -90,9 +90,9 @@ const Home = () => {
                         <p>Monthly, fortnighthly weelky discounts</p>
                     </section>
                 </div>
-            </section> */}
+            </section>
 
-            {/* <Quote />
+            <Quote />
 
             <br id="reviews"></br>
             <br></br>
@@ -127,7 +127,7 @@ const Home = () => {
 
             <br id="services"></br>
             <br></br>
-            <section className="sixthBox">
+            {/* <section className="sixthBox">
                 <section className="serviceBoxes">
                     <div className="serviceBox ">
                         <img className="serviceIcon" alt="serviceIcon" src="https://cdn-icons-png.flaticon.com/512/2377/2377076.png" />
@@ -149,9 +149,9 @@ const Home = () => {
                         <p className="orangeStyle">Get a quote</p>
                     </div>
                 </section>
-            </section>
- */}
-            {/* <ContactUs /> */}
+            </section> */}
+
+            <ContactUs />
 
         </body >)
 }

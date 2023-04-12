@@ -1,17 +1,21 @@
 .thirdBox {
     display: flex;
     flex-direction: row;
-    height: 60vh;
+    flex-wrap: wrap;
+    /* height: 60vh; */
     margin-left: 20px;
     margin-right: 20px;
 }
 
 .thirdBoxLeft {
-    width: 50%;
+    flex-grow: 1;
+    width: 500px;
     background-color: #f3eced;
     padding: 5em;
     padding-left: 135px;
     font-size: 18px;
+    height: 70vh;
+
 }
 
 .thirdBoxLeft h1 {
@@ -131,8 +135,10 @@
 
 
 .thirdBoxRight {
+    flex-grow: 1;
     background-image: linear-gradient(142deg, #ff7b4f 0%, #fb4965 100%);
-    width: 50%;
+    flex-basis: 500px;
+    height: 70vh;
     color: white;
     padding-top: 75px;
     padding-left: 100px;
