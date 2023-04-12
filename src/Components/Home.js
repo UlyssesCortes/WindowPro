@@ -34,9 +34,6 @@ const Home = () => {
 
             <section id="home" className="mainSecTop">
                 <section className="leftSection">
-                    <br></br>
-                    <br></br>
-                    <br></br>
                     <div className="leftBoxContainer">
                         <div className="leftTextTop">
                             <h1 className="slogan">
@@ -46,7 +43,7 @@ const Home = () => {
                                 </span> </h1>
                             <p className="subSlogan">The best cleaning results are guaranteed by our 100% Happiness Guarantee</p>
                         </div>
-                        <section className="firstServiceSec">
+                        {/* <section className="firstServiceSec">
                             <div className="homeClening">
                                 <div className="homeIcon"></div>
                                 <h2 className="homeCleaningTitle">Residential</h2>
@@ -61,8 +58,7 @@ const Home = () => {
                                 <p className="homeDes">We offer competitive rates for workspaces big and small</p>
                                 <p className="comercialQuote">Get a quote</p>
                             </div>
-                        </section>
-
+                        </section> */}
                     </div>
                 </section>
                 <section className="rightSection">
@@ -70,7 +66,7 @@ const Home = () => {
                 </section>
             </section>
 
-            <section className="secondBox">
+            {/* <section className="secondBox">
                 <div className="secondBoxLeft">
                     <p className="orangeStyle">OUR BENEFITS</p>
                     <h1 className="secondTitle">What We Offer</h1>
@@ -94,9 +90,9 @@ const Home = () => {
                         <p>Monthly, fortnighthly weelky discounts</p>
                     </section>
                 </div>
-            </section>
+            </section> */}
 
-            <Quote />
+            {/* <Quote />
 
             <br id="reviews"></br>
             <br></br>
@@ -154,8 +150,8 @@ const Home = () => {
                     </div>
                 </section>
             </section>
-
-            <ContactUs />
+ */}
+            {/* <ContactUs /> */}
 
         </body >)
 }
